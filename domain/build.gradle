@@ -1,0 +1,10 @@
+apply from: "$rootDir/common-library.gradle"
+
+dependencies {
+    implementation Libraries.rxKotlin
+    implementation Libraries.rxJava
+    implementation project(Modules.model)
+}
+repositories {
+    mavenCentral()
+}

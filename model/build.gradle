@@ -1,0 +1,18 @@
+apply from: "$rootDir/common-library.gradle"
+
+repositories {
+    maven {
+        url "https://repo.eclipse.org/content/repositories/paho-releases/"
+    }
+}
+
+dependencies {
+    implementation Libraries.rxJava
+    implementation Libraries.rxJava
+    implementation Libraries.moshi
+    implementation Libraries.rxMQTT
+    implementation Libraries.kotlinStandardLibrary
+}
+repositories {
+    mavenCentral()
+}

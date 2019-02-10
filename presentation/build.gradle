@@ -1,0 +1,16 @@
+apply from: "$rootDir/common-library.gradle"
+
+dependencies {
+    implementation project(Modules.domain)
+    implementation Libraries.kotlinStandardLibrary
+    implementation SupportLibraries.appCompatLibrary
+    implementation SupportLibraries.constraintLayoutLibrary
+    implementation SupportLibraries.design
+    implementation SupportLibraries.cardview
+    implementation SupportLibraries.recyclerview
+    implementation Libraries.lifecycleExtensions
+    implementation Libraries.rxJava
+    implementation Libraries.rxKotlin
+    implementation Libraries.rxAndroid
+    annotationProcessor Libraries.lifecycleCompiler
+}
